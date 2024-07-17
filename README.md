@@ -66,13 +66,3 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 LinkedIN - (https://www.linkedin.com/in/mayappa-pujari-625432182) </br >
 Email - (mayappapujari561999@gmail.com)
-
-## 🙏 Acknowledgements
-
-- [Open Source Guides](https://opensource.guide/)
-- [Choose an Open Source License](https://choosealicense.com)
-- [GitHub Pages](https://pages.github.com)
-- [Font Awesome](https://fontawesome.com)
-
-
-
