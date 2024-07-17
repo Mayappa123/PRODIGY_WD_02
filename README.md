@@ -4,7 +4,7 @@ Welcome to the StopWatch project! This is a simple yet elegant stopwatch applica
 
 ## 🖥️ Demo
 
-Check out the live demo [here](https://your-demo-link.com)
+Check out the live demo [here](https://mayappa123.github.io/PRODIGY_WD_02/)
 
 ## 🌟 Features
 
