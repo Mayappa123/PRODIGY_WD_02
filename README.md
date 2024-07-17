@@ -29,13 +29,13 @@ You will need a web browser to run this project.
 1. Clone the repository to your local machine:
 
     ```sh
-    git clone https://github.com/Mayappa123/StopWatch.git
+    git clone https://github.com/Mayappa123/PRODIGY_WD_02.git
     ```
 
 2. Navigate to the project directory:
 
     ```sh
-    cd StopWatch
+    cd PRODIGY_WD_02
     ```
 
 3. Open the `index.html` file in your preferred web browser.
@@ -70,7 +70,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Mayappa Pujari - [LinkedIn](https://www.linkedin.com/in/mayappa-pujari-625432182) - mayappapujari561999@gmail.com
 
-Project Source Code Link: [https://github.com/Mayappa123/StopWatch](https://github.com/Mayappa123/StopWatch)
+Project Source Code Link: [https://github.com/Mayappa123/StopWatch](https://github.com/Mayappa123/PRODIGY_WD_02)
 
 ## 🙏 Acknowledgements
 
