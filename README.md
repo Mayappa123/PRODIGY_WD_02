@@ -64,7 +64,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 📞 Contact
 
-Mayappa Pujari - [LinkedIn](https://www.linkedin.com/in/mayappa-pujari-625432182) - mayappapujari561999@gmail.com
+[LinkedIn](https://www.linkedin.com/in/mayappa-pujari-625432182)
+[Email](mayappapujari561999@gmail.com)
 
 Project Source Code Link: [https://github.com/Mayappa123/PRODIGY_WD_02](https://github.com/Mayappa123/PRODIGY_WD_02)
 
