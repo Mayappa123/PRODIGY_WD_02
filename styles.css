@@ -7,49 +7,18 @@ body {
   color: var(--text-color);
   position: relative;
   overflow: hidden;
-}
-
-body::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  background-image: url("https://images.unsplash.com/photo-1613828330596-982c62f72e9a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YmFja2dyb3VuZCUyMGltYWdlfGVufDB8fDB8fHww");
-  filter: blur(10px); /* Adjust the blur amount as needed */
-  z-index: -1; /* Keep the background behind the content */
-}
-
-body.day::before {
-  background-image: url("https://images.unsplash.com/photo-1613828330596-982c62f72e9a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YmFja2dyb3VuZCUyMGltYWdlfGVufDB8fDB8fHww");
-}
-
-body.night::before {
-  background-image: url("https://images.unsplash.com/photo-1614989799749-6c1e704dca56?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1vb24lMjBhbmQlMjBzdGFyc3xlbnwwfHwwfHx8MA%3D%3D");
+  margin: 0;
+  background: linear-gradient(to right, #74ebd5, #9face6);
 }
 
 :root {
   --text-color: #333;
-  --stopwatch-bg: rgba(255, 255, 255, 0.5); /* Increase transparency */
+  --stopwatch-bg: rgba(255, 255, 255, 0.5);
   --button-color: #fff;
   --start-bg: #28a745;
   --start-hover: #218838;
   --reset-bg: #dc3545;
   --reset-hover: #c82333;
-}
-
-body.day {
-  --bg-color: #ffffff;
-}
-
-body.night {
-  --bg-color: #333;
-  --text-color: #f0f0f0;
-  --stopwatch-bg: rgba(0, 0, 0, 0.5); /* Increase transparency */
-  --button-color: #333;
 }
 
 .container {
@@ -58,36 +27,50 @@ body.night {
   align-items: center;
 }
 
-.custom-control.custom-switch {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-
 .stopwatch {
   text-align: center;
-  width: 430px;
+  width: 480px;
   background: var(--stopwatch-bg);
   padding: 20px;
   border-radius: 15px;
-  box-shadow: 5px 5px 15px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
-  transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
+  animation: fadeIn 1s ease;
 }
 
-h1 {
-  display: block;
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 2rem;
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 #display {
   font-size: 3.5rem;
   margin-bottom: 20px;
   font-weight: bold;
-  width: 300px;
   letter-spacing: 2px;
+  animation: fadeIn 1s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Courier New', Courier, monospace; /* Monospace font */
+}
+
+#display p {
+  margin: 0;
+  text-align: center;
+  display: flex;
+}
+
+#display span {
+  display: inline-block;
+  width: 22px; 
 }
 
 .buttons button {
@@ -99,8 +82,7 @@ h1 {
   border-radius: 25px;
   cursor: pointer;
   color: var(--button-color);
-  transition: background-color 0.3s ease, transform 0.3s ease,
-    box-shadow 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #startStop {
@@ -125,7 +107,7 @@ h1 {
   box-shadow: 0 6px 12px rgba(220, 53, 69, 1);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .stopwatch {
     width: 90%;
     padding: 15px;
@@ -142,7 +124,7 @@ h1 {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
   #display {
     font-size: 2rem;
   }
@@ -152,9 +134,4 @@ h1 {
     font-size: 0.8rem;
     padding: 8px 10px;
   }
-}
-
-.transition {
-  transition: background-image 0.5s ease, color 0.5s ease,
-    background-image 0.5s ease;
 }
