@@ -1,4 +1,4 @@
-# ⏱️ StopWatch Project
+# ⏱️ StopWatch Web Application
 
 Welcome to the StopWatch project! This is a simple yet elegant stopwatch application built using HTML, CSS, and JavaScript. It allows you to start, stop, and reset the timer with ease.
 
