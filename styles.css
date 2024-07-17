@@ -39,6 +39,12 @@ body {
   animation: fadeIn 1s ease;
 }
 
+.developer {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
