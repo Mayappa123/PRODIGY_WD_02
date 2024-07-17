@@ -12,10 +12,6 @@ Check out the live demo [here](https://your-demo-link.com)
 - Responsive design
 - Clean and user-friendly interface
 
-## 📸 Screenshots
-
-![StopWatch Screenshot](link-to-screenshot)
-
 ## 🚀 Getting Started
 
 Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
