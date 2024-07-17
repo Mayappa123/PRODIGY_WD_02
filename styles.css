@@ -44,6 +44,9 @@ body {
   bottom: 0;
   text-align: center;
 }
+h1 {
+  font-size: 35px;
+}
 
 @keyframes fadeIn {
   0% {
@@ -119,6 +122,10 @@ body {
     padding: 15px;
   }
 
+  h1 {
+  font-size: 25px;
+}
+
   #display {
     font-size: 2.5rem;
   }
@@ -133,6 +140,10 @@ body {
 @media (max-width: 480px) {
   #display {
     font-size: 2rem;
+  }
+
+  h1 {
+    font-size: 20px;
   }
 
   .buttons button {
